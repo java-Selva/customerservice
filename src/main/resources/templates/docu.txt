@@ -1,0 +1,26 @@
+
+# Overall System Flow
+Customer Service -> REST controller -> Request DTO -> Customer Processor -> DAO -> JPA Repository -> Hibernate -> MYSQL
+
+# Customer Processor
+Apache Camel -> Event Routing -> Kafka Event
+
+# Internal Flow
+Controller -> Request DTO -> Processor -> DAO -> Repository -> Hibernate -> MYSQL
+
+# Response FLow
+MYSQL -> Entity -> DAO -> Processor -> Response DTO -> Controller -> JSON
+
+# ORM Flow
+Spring boot -> Spring Data JPA -> Hibernate -> Scan @Entity -> Customer.java -> Check MYSQL -> is exist / not -> CREATE TABLE Customer
+
+
+
+
+
+
+
+
+
+
+
