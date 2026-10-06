@@ -15,10 +15,6 @@ public class CustomerDAOImpl implements CustomerDAO{
 
     private final CustomerRepository customerRepository;
 
-    public CustomerDAOImpl(CustomerRepository customerRepository) {
-        this.customerRepository = customerRepository;
-    }
-
     @Override
     public Customer save(Customer customer) {
         return customerRepository.save(customer);
@@ -35,8 +31,8 @@ public class CustomerDAOImpl implements CustomerDAO{
     }
 
     @Override
-    public boolean existByEmail(String email) {
-        return customerRepository.existByEmail(email);
+    public boolean existsByEmail(String email) {
+        return customerRepository.existsByEmail(email);
     }
 
     @Override

@@ -15,9 +15,9 @@ public class CustomerMapper {
                 .lastName(customer.getLastName())
                 .email(customer.getEmail())
                 .phone(customer.getPhone())
-                .status(customer.getStatus().name)
+                .status(customer.getStatus().name())
                 .createdAt(customer.getCreatedAt())
-                .updateddAt(customer.getUpdatedAt())
+                .updatedAt(customer.getUpdatedAt())
                 .build();
     }
 

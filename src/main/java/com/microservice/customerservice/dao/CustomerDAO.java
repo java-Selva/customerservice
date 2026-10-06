@@ -10,7 +10,7 @@ public interface CustomerDAO {
     Customer save(Customer customer);
     Optional<Customer> findByID(Long id);
     Optional<Customer> findByEmail(String email);
-    boolean existByEmail(String email);
+    boolean existsByEmail(String email);
     List<Customer> findByStatus(CustomerStatus statue);
     void delete(Customer customer);
     List<Customer> findAll();
