@@ -14,7 +14,8 @@ MYSQL -> Entity -> DAO -> Processor -> Response DTO -> Controller -> JSON
 # ORM Flow
 Spring boot -> Spring Data JPA -> Hibernate -> Scan @Entity -> Customer.java -> Check MYSQL -> is exist / not -> CREATE TABLE Customer
 
-
+CAMEL & KAFKA
+Customer API -> Producer -> DAO -> MYSQL -> CAMEL -> KAFKA -> customer.events
 
 
 
